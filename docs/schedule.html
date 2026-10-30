@@ -145,7 +145,7 @@ W='日月火水木金土',it=(window.LAL_UPCOMING||[]).filter(function(e){return
 if(!it.length){el.innerHTML='<li class="empty">いま分かっている予定はありません。</li>';return}
 el.innerHTML=it.map(function(e){var d=new Date(e.date+'T00:00:00');return '<li><div class="d">'+(d.getMonth()+1)+'/'+d.getDate()+'<small>'+d.getFullYear()+'（'+W[d.getDay()]+'）</small></div><div><span class="k">'+(K[e.kind]||'')+'</span><div>'+e.title.replace(/[<>&]/g,'')+'</div></div></li>'}).join('')})();
 </script></main><aside class="side">
-<div class="box"><h2>🎨 このアトリエについて</h2><p class="note">イラストレーター・LAL!ROLE（らりろーる）さんが公式に発表したお仕事を、本人の告知ポストと一緒に年表でたどれる<b>非公式</b>のファンサイトです。ご本人・公式とは関係ありません。</p></div>
+<div class="box"><h2>🎨 このアトリエについて</h2><p class="note">イラストレーター・LAL!ROLE（らりろーる）さんが公式に発表したお仕事を、本人の告知ポストと一緒に年表でたどれる<b>非公式</b>のファンサイトです。お仕事がまっすぐ評価につながるよう、どれにも本人のお名前と告知ポストを添えています。ご本人・公式とは関係ありません。<a href="about.html">つくった理由 →</a></p></div>
 <div class="box"><h2>🗂 お仕事の種類でたどる</h2><ul><li><a href="game.html">ゲーム（9）</a></li><li><a href="books.html">本の表紙（8）</a></li><li><a href="vtuber.html">VTuber・ライブ（5）</a></li><li><a href="exhibit.html">展示・できごと（4）</a></li></ul></div>
 <div class="box sticky"><h2>📅 年でたどる</h2><ul><li><a href="year/2017.html">2017年</a></li><li><a href="year/2018.html">2018年</a></li><li><a href="year/2019.html">2019年</a></li><li><a href="year/2021.html">2021年</a></li><li><a href="year/2022.html">2022年</a></li><li><a href="year/2024.html">2024年</a></li><li><a href="year/2025.html">2025年</a></li><li><a href="year/2026.html">2026年</a></li></ul>
 <h2 style="margin-top:14px">📣 公式はこちら</h2><ul>
