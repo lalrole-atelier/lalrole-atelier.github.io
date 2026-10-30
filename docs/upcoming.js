@@ -1,0 +1,1 @@
+window.LAL_UPCOMING=[];

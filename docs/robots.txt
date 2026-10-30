@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lalrole-atelier.github.io/sitemap.xml
