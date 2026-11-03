@@ -231,6 +231,8 @@ def build():
          + upcoming_box(80, "予定一覧", more=False), crumb=["これからの予定"])
 
     page("about.html", "このアトリエについて", "LAL!ROLE ひみつのアトリエについて、運営方針とプライバシーポリシー。", f"""<section><h1>このアトリエについて</h1>
+<h2 style="margin-top:4px">来てくださって、ありがとうございます</h2>
+<p>たくさんのキャラクターと物語に光を当ててきた LAL!ROLE さん、一緒に作品をつくってきた作家・ゲーム・配信者の皆さん、そして応援を続けるファンの皆さんに、心から感謝しています。このアトリエが、あなたの「好き」をもう一度たしかめる場所になればうれしいです。</p>
 <p>「LAL!ROLE ひみつのアトリエ」は、イラストレーター・LAL!ROLE（らりろーる）さんが公式に発表したお仕事を、ファンのあなたが好きなときにたどれるようにつくった<b>非公式</b>のファンサイトです。LAL!ROLE さんご本人、関係する企業・団体とは一切関係ありません。</p></section><section>
 <h2>このアトリエをつくった理由</h2>
 <p>LAL!ROLE さんの絵に心をつかまれて、もっと知りたいと思ったあなたが、お仕事をひとつの場所でたどれるようにしたかったからです。ゲームのキャラクター、本の表紙、ライブのビジュアルと、LAL!ROLE さんのお仕事はたくさんの場所に散らばっていて、探しているファンの方が見つけにくいと感じていました。</p>
@@ -246,15 +248,13 @@ def build():
 <h2>AI の使い方と、お問い合わせ</h2>
 <p>年表・紹介文の下書きにAIを使い、内容は運営者が本人の告知と公式の発表で確かめています。AI で作った絵は置いていません。</p>
 <p>削除のご依頼や誤りのご指摘は、<a href="https://x.com/masabee1029" target="_blank" rel="noopener">X @masabee1029</a> の DM（ダイレクトメッセージ）でお知らせください。すぐに対応します。</p>
-<h2>来てくださって、ありがとうございます</h2>
-<p>たくさんのキャラクターと物語に光を当ててきた LAL!ROLE さん、一緒に作品をつくってきた作家・ゲーム・配信者の皆さん、そして応援を続けるファンの皆さんに、心から感謝しています。このアトリエが、あなたの「好き」をもう一度たしかめる場所になればうれしいです。</p>
-<p>あなたのいちばん好きな LAL!ROLE さんのお仕事は、どれですか？</p>
 <h2>プライバシーポリシー</h2>
 <p>X のポストは X（旧 Twitter）の公式埋め込みで表示しているため、X が Cookie などで情報を取得する場合があります。アクセスの傾向を知るために Google アナリティクスを使っています。Cookie を使って匿名のアクセス情報を集めますが、個人を特定する情報は集めません。ブラウザの設定で Cookie を無効にできます。</p>
 <h2>参考にしている情報源</h2><ul>
 <li><a href="{ME}" target="_blank" rel="noopener">LAL!ROLE さん本人の X（@Laxxxli）</a></li>
 <li>各作品の公式 X（アークナイツ・各出版社・各著者・にじさんじ・ChroNoiR など）</li>
-<li><a href="https://ichi-up.net/cs2018/160" target="_blank" rel="noopener">1UP クリエイターセレクション vol.161 - LAL!ROLE</a></li></ul></section>""", crumb=["このアトリエについて"])
+<li><a href="https://ichi-up.net/cs2018/160" target="_blank" rel="noopener">1UP クリエイターセレクション vol.161 - LAL!ROLE</a></li></ul>
+<p>あなたのいちばん好きな LAL!ROLE さんのお仕事は、どれですか？</p></section>""", crumb=["このアトリエについて"])
 
     sm = "".join(f"<url><loc>{SITE}{'' if p == 'index.html' else p}</loc><lastmod>{TODAY}</lastmod></url>" for p in PAGES)
     open(os.path.join(OUT, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>')
